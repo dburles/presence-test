@@ -1,0 +1,21 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "iron-router": {},
+      "server-eval": {}
+    },
+    "packages": {
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.6.1",
+        "commit": "4e1ee0581d68bff422a915dacb0bd30eae10fe08"
+      },
+      "server-eval": {
+        "git": "https://github.com/gandev-de/meteor-server-eval.git",
+        "tag": "v0.4.1",
+        "commit": "4b9eb658ae02ad34fd4b525852bac9be90938744"
+      }
+    }
+  }
+}

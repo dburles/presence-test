@@ -1,0 +1,50 @@
+<template name="layout">
+  <a href="{{pathFor 'home'}}">Home</a>
+  <a href="{{pathFor 'pageOne'}}">Page 1</a>
+  <a href="{{pathFor 'pageTwo'}}">Page 2</a>
+  <a href="{{pathFor 'pageThree'}}">Page 3</a>
+  {{loginButtons}}
+  <hr>
+  {{> users}}
+  <hr>
+  {{yield}}
+</template>
+
+<template name="users">
+  <ul>
+  {{#each users}}
+    {{> user}}
+  {{/each}}
+  </ul>
+</template>
+
+<template name="user">
+  <li>
+    {{_id}}
+    <ul>
+      {{#with state}}
+        <li>route: {{route}}</li>
+        <li>test1: {{test1}}</li>
+        <li>test2: {{test2}}</li>
+        <li>test3: {{test3}}</li>
+        <li>user: {{user}}</li>
+      {{/with}}
+    </ul>
+  </li>
+</template>
+
+<template name="home">
+  <h3>home</h3>
+</template>
+
+<template name="pageOne">
+  <h3>page one</h3>
+</template>
+
+<template name="pageTwo">
+  <h3>page two</h3>
+</template>
+
+<template name="pageThree">
+  <h3>page three</h3>
+</template>
